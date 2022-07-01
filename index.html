@@ -32,7 +32,7 @@
               <a class="header-link" href="./portfolio.html">Портфолио</a>
             </li>
             <li class="header-list-item">
-              <a class="header-link" href="#contacts">Контакты</a>
+              <a class="header-link" href="#">Контакты</a>
             </li>
           </ul>
         </nav>
@@ -62,7 +62,7 @@
       <section class="hero">
         <div class="container">
           <h1 class="title">Эффективные решения для вашего бизнеса</h1>
-          <button class="hero-button" type="button" data-modal-open>
+          <button class="hero-button btn" type="button" data-modal-open>
             Заказать услугу
           </button>
         </div>
@@ -580,7 +580,7 @@
       </section>
     </main>
     <!-- Футер -->
-    <footer class="page-footer" id="contacts">
+    <footer class="page-footer">
       <div class="page-footer-container container">
         <div class="address-container">
           <a class="footer-logo" href="/"
@@ -686,16 +686,102 @@
             </li>
           </ul>
         </div>
+        <div class="subscribe-container">
+          <p class="subscribe-container-title">Подпишитесь на рассылку</p>
+          <form class="subscribe-form">
+            <label>
+              <input
+                class="footer-input"
+                type="email"
+                name="subscribe-email"
+                placeholder="E-mail"
+              />
+            </label>
+            <button class="subscribe-btn btn" type="submit">
+              Подписаться
+              <svg class="icon-send" width="24" height="24">
+                <use href="./images/icons/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-btn-close" type="button" data-modal-close>
-          <svg class="icon-cross-btn" width="11" height="11">
-            <use href="./images/icons/icons.svg#icon-cross">
-            </use>
+          <svg class="icon-cross-btn" width="18" height="18">
+            <use href="./images/icons/icons.svg#icon-cross"></use>
           </svg>
         </button>
+        <div class="modal-container">
+          <p class="modal-container-title">
+            Оставьте свои данные, мы вам перезвоним
+          </p>
+          <form class="call-back-form" autocomplete="off">
+            <div class="input-group">
+              <label class="call-back-label input-wrapper"
+                ><span class="call-back-label-descr">Имя</span>
+                <input
+                  class="call-back-input"
+                  placeholder=" "
+                  type="text"
+                  name="user-name"
+                />
+                <svg class="icon-person input-icon" width="18" height="18">
+                  <use href="./images/icons/icons.svg#icon-person-input"></use>
+                </svg>
+              </label>
+            </div>
+            <div class="input-group">
+              <label class="call-back-label input-wrapper"
+                ><span class="call-back-label-descr">Телефон</span>
+                <input class="call-back-input" type="tel" name="tel" />
+                <svg class="icon-phone input-icon" width="18" height="18">
+                  <use href="./images/icons/icons.svg#icon-phone-input"></use>
+                </svg>
+              </label>
+            </div>
+            <div class="input-group">
+              <label class="call-back-label input-wrapper"
+                ><span class="call-back-label-descr">Почта</span>
+                <input class="call-back-input" type="email" name="email" />
+                <svg class="icon-email input-icon" width="18" height="18">
+                  <use href="./images/icons/icons.svg#icon-email-input"></use>
+                </svg>
+              </label>
+            </div>
+            <div class="textarea-group">
+              <label class="call-back-label"
+                ><span class="call-back-label-descr">Комментарий</span>
+                <textarea
+                  class="call-back-textarea"
+                  name="comment"
+                  placeholder="Введите текст"
+                ></textarea>
+              </label>
+            </div>
+            <div class="checkbox-group">
+              <label class="checkbox-label">
+                <input
+                  class="call-back-checkbox"
+                  type="checkbox"
+                  name="policy"
+                />
+                <span class="terms-descr"
+                  >Соглашаюсь с рассылкой и принимаю</span
+                >
+                <a class="terms-link" href="#">Условия договора</a>
+                <svg class="icon-check" width="16" height="15">
+                  <use href="./images/icons/icons.svg#icon-check"></use>
+                </svg>
+              </label>
+            </div>
+            <div class="btn-wrapper">
+              <button class="call-back-btn btn" type="submit">Отправить</button>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
     <script src="./js/modal.js"></script>
